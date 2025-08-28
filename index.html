@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Byishimo Kevin</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Expertise</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Byishimo Kevin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!--------------Profile------------>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Byishimo Kevin profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Byishimo Kevin</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/call.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/email.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/feb.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+        </div>
+      </div>
+    </section>
+    <!--------------About------------>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+       <!--------------Skills------------>
+   <section id="experience">
+      <!--------------Skills------------>
+<iframe src="skills/skill.html" width="100%" height="500px" style="border:none;"></iframe>
+      <link rel="stylesheet" href="">
+    </section>
+          <!--------------Projects------------>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!--------------Contact me Form------------>
+    <main class="wrap">
+        <div class="kicker"></div>
+        <h1>Contact Me</h1>
+
+        <section class="grid" aria-label="Contact section">
+            <div class="left">
+                <h3>Leave us your info</h3>
+
+                <div class="field">
+                    <input class="input" type="text" placeholder="Your Full Name ( Required )"
+                        aria-label="Your full name" required>
+                </div>
+                <div class="field">
+                    <input class="input" type="email" placeholder="Your Email ( Required )" aria-label="Your email"
+                        required>
+                </div>
+                <div class="field">
+                    <input class="input" type="text" placeholder="Subject" aria-label="Subject">
+                </div>
+                <div class="field">
+                    <textarea class="textarea" placeholder="Your Message" aria-label="Your message"></textarea>
+                </div>
+                <div class="actions">
+                    <button class="btn" type="button">Send Message</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="about">
+                    <p style="margin:0 0 8px; color:#5c5c5c;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et
+                        laborum, rem, dolore eum quod voluptate exercitationem nobis, nihil esse debitis maxime
+                        facere minus sint delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                        Eligendi illum libero dolorum cum laboriosam corrupti quidem, reiciendis ea magnam?
+                        Nulla, impedit fuga!
+                    </p>
+
+                    <div class="socials" aria-label="social links">
+                        <a class="icon" href="#" title="Call">📞</a>
+                        <a class="icon" href="#" title="Gmail">
+                          <i class="fa-solid fa-envelopes"></i>
+                        </a>
+                        <a class="icon" href="#" title="Instagram">📷</a>
+                        <a class="icon" href="#" title="Facebook">📘</a>
+                    </div>
+                </div>
+                <!-- Embedded Google Map -->
+                    <iframe  class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309085.9849087653!2d29.799568691273308!3d-2.0328914340940183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca869eaf9a351%3A0x1bce7ea69ee733ab!2sKicukiro%2C%20Kigali%2C%20Rwanda!5e1!3m2!1sen!2sau!4v1755858675258!5m2!1sen!2sau" 
+                    width="600" height="400" style="border:0;" 
+                    allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+            </div>
+        </section>
+
+        
+    </main>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+            Copyright © 2023 Byishimo Kevin. All Rights Reserved.
+        </footer>
+</html>
